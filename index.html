@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <title>Calculatrice</title>
+   <link rel="stylesheet" href="style.css" media="all" type="text/css" />
+   
+</head>
+<body>
+  <table border  cellspacing="20" >
+    <thead>
+      <tr>
+         <th colspan="4" id="title">CALCOL JOELITO++</th>
+      </tr>
+      <tr>
+         <th colspan="4">
+           <input type="text" value=""  placeholder="Résultat" readonly="readonly" id="input-result" />
+           <input type="text" value=""  placeholder="0" id="input-operation"  />
+         </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="1" class="btn-cancel"><input type="button" value="E" id="cancel" onclick="cancel()" /></td>
+        <td colspan="1" class="btn-initial"><input type="button" value="CE" id="initial" onclick='init()' /></td>
+        <td><input type="button" value="(" name="" class="btn-actif" onClick='btnOperation(this.value)' /></td>
+        <td><input type="button" value=")" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" name="" class="btn-actif" onClick='btnOperation(this.value)' /></td>
+        <td><input type="button" value="8" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>
+        <td><input type="button" value="9" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>
+        <td><input type="button" value="/" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>			
+      </tr>	
+      <tr>
+        <td><input type="button" value="4" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>
+        <td><input type="button" value="5" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>
+        <td><input type="button" value="6" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>
+        <td><input type="button" value="*" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>			
+      </tr>
+      <tr>
+        <td><input type="button" value="1" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>
+        <td><input type="button" value="2" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>
+        <td><input type="button" value="3" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>
+        <td><input type="button" value="-" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>			
+      </tr>
+      <tr>
+        <td><input type="button" value="0" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>
+        <td><input type="button" value="." name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>
+        <td><input type="button" value="=" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>
+        <td><input type="button" value="+" name="" class="btn-actif" onclick='btnOperation(this.value)' /></td>		
+      </tr>
+    </tbody>
+  </table>
+  <script src="script.js" type="text/javascript" language="javascript"  ></script>
+</body>
+</html>
